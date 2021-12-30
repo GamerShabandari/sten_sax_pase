@@ -1,0 +1,78 @@
+body {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    height: auto
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    height: 10vh;
+}
+
+header h1{
+
+    height: auto;
+    background-color: aqua;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+
+.buttonContainer{
+    background-color: blueviolet;
+    height: 50px;
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    color: bisque;
+
+}
+
+#pointContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 30vh;
+    font-size: 5rem;
+    background-color: aquamarine;
+}
+
+#gameContainer {
+    background-color: burlywood;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 100px;
+    height: 60vh;
+    font-size: 5rem;
+    
+}
+
+#playerOne {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+
+#playerTwo {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
+    
+}
