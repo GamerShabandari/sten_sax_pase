@@ -1,17 +1,27 @@
 body {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
     margin: 0%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 200;
-    height: auto
+    height: auto;
+    background-color: rgb(191, 212, 216);
 
 }
 
+.gameBorder{
+    width: 70%;
+}
+
 header{
+    padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: aqua;
-    height: 10vh;
+    height: 25vh;
 }
 
 header h1{
@@ -23,10 +33,75 @@ header h1{
 
 }
 
+.moveContainer{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
 
-.buttonContainer{
+#rockBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-size: 3.8rem;
+}
+
+#rockBtn:hover {
+    border: 2px solid blueviolet;
+}
+
+#scissorBtn{
+
+    border: 2px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-size: 3.8rem;
+    
+}
+
+#scissorBtn:hover {
+    border: 2px solid blueviolet;
+}
+
+#paperBtn{
+
+    border: 2px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-size: 3.8rem;
+
+}
+
+#paperBtn:hover {
+    border: 2px solid blueviolet;
+}
+
+
+.playersContainer{
     background-color: blueviolet;
-    height: 50px;
+    height: 10vh;
     gap: 40px;
     display: flex;
     justify-content: center;
@@ -41,7 +116,7 @@ header h1{
     justify-content: center;
     align-items: center;
     gap: 100px;
-    height: 30vh;
+    height: 20vh;
     font-size: 5rem;
     background-color: aquamarine;
 }
@@ -52,27 +127,35 @@ header h1{
     align-items: center;
     display: flex;
     gap: 100px;
-    height: 60vh;
+    height: 40vh;
     font-size: 5rem;
     
 }
 
 #playerOne {
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    background-color: whitesmoke;
+    border: 1px solid black;
     border-radius: 50%;
     text-align: center;
+    font-size: 4rem;
     
 }
 
 #playerTwo {
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    background-color: whitesmoke;
+    border: 1px solid black;
     border-radius: 50%;
     text-align: center;
+    font-size: 4rem;
     
 }

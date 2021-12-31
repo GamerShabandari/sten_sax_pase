@@ -12,22 +12,31 @@
 </head>
 
 <body>
-    <header class="header"><h1>Welcome - Press Play</h1></header>
-    <div class="buttonContainer">
-        <h2>Player 1</h2>
-        <button id="playBtn">play</button>
-        <h2>Player 2</h2>
-    </div>
-    <div id="pointContainer">
-        <div id="playerOnePoint"></div>
-        <div id="playerTwoPoint"></div>
+    <div class="gameBorder">
+        <header class="header">
+            <h1>Welcome Player One - Make your move!</h1>
+            <div class="moveContainer">
+                <div id="rockBtn">🪨</div>
+                <div id="paperBtn">💰</div>
+                <div id="scissorBtn">✂️</div>
+            </div>
+        </header>
+        <div class="playersContainer">
+            <h2 class="playerOneH1">Player 1</h2>
+            <h2 class="playerTwoH1">Player 2</h2>
+        </div>
+        <div id="pointContainer">
+            <div id="playerOnePoint"></div>
+            <div id="playerTwoPoint"></div>
+        </div>
+
+        <div id="gameContainer">
+            <div id="playerOne"></div>
+            <div id="playerTwo"></div>
+        </div>
+
     </div>
 
-    <div id="gameContainer">
-        <div id="playerOne"></div>
-        <div id="playerTwo"></div>
-    </div>
-    
 
 </body>
 
