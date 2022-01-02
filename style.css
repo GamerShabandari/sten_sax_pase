@@ -6,12 +6,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 200;
     height: auto;
-    background-color: rgb(191, 212, 216);
+    
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+
 
 }
 
 .gameBorder{
-    width: 70%;
+    width: 60%;
 }
 
 header{
@@ -20,14 +24,15 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    background-color: rgba(220, 220, 220, 0.8);
     height: 25vh;
 }
 
 header h1{
 
     height: auto;
-    background-color: aqua;
+    color: blueviolet;
+    font-weight: 8  00;
     margin: 0%;
     padding: 0%;
 
@@ -100,29 +105,29 @@ header h1{
 
 
 .playersContainer{
-    background-color: blueviolet;
+    background-color: rgba(137, 43, 226, 0.6);
     height: 10vh;
     gap: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-self: center;
-    color: bisque;
+    color: whitesmoke;
 
 }
 
 #pointContainer{
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    gap: 50px;
     align-items: center;
-    gap: 100px;
     height: 20vh;
     font-size: 5rem;
-    background-color: aquamarine;
+    background-color: rgba(220, 220, 220, 0.8);
 }
 
 #gameContainer {
-    background-color: burlywood;
+    background-color:rgba(100, 148, 237, 0.6);
     justify-content: center;
     align-items: center;
     display: flex;
@@ -139,7 +144,7 @@ header h1{
     width: 130px;
     height: 130px;
     background-color: whitesmoke;
-    border: 1px solid black;
+    
     border-radius: 50%;
     text-align: center;
     font-size: 4rem;
@@ -153,9 +158,25 @@ header h1{
     width: 130px;
     height: 130px;
     background-color: whitesmoke;
-    border: 1px solid black;
+    
     border-radius: 50%;
     text-align: center;
     font-size: 4rem;
     
+}
+
+#playerTwoPoint {
+    
+    background-color: rgba(245, 245, 245, 0.911);
+    border-radius: 10%;
+    padding: 10px;
+    opacity: 0;
+}
+
+#playerOnePoint {
+    
+    background-color: rgba(245, 245, 245, 0.911);
+    border-radius: 10%;
+    padding: 10px;
+    opacity: 0;
 }
