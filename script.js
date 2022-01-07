@@ -12,10 +12,10 @@ let player1points = 0;
 
 let player2points = 0;
 
-gsap.from(".header", { y: -100, duration: 2, ease: "elastic" });
+gsap.from(".header", { y: -1000, duration: 2, ease: "elastic" });
 gsap.from(".playersContainer", { x: -1000, duration: 2, ease: "elastic" });
-gsap.from("#pointContainer", { y: -1000, duration: 2, ease: "elastic" });
-gsap.from("#gameContainer", { y: 1000, duration: 2, ease: "elastic" });
+gsap.from("#pointContainer", { x: +1000, duration: 2, ease: "elastic" });
+gsap.from("#gameContainer", { y: -1000, duration: 2, ease: "bounce" });
 
 gsap.from("#rockBtn", { y: -1000, duration: 2.1, delay: 0.8, ease: "bounce" });
 gsap.from("#paperBtn", { y: -1000, duration: 2.1, delay: 0.9, ease: "bounce" });
