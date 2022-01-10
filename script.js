@@ -1,4 +1,3 @@
-//const playBtn = document.getElementById("playBtn");
 const rockBtn = document.getElementById("rockBtn");
 const paperBtn = document.getElementById("paperBtn");
 const scissorBtn = document.getElementById("scissorBtn");
@@ -12,23 +11,18 @@ let player1points = 0;
 
 let player2points = 0;
 
-gsap.from(".header", { y: -1000, duration: 2, ease: "elastic" });
-gsap.from(".playersContainer", { x: -1000, duration: 2, ease: "elastic" });
-gsap.from("#pointContainer", { x: +1000, duration: 2, ease: "elastic" });
-gsap.from("#gameContainer", { y: -1000, duration: 2, ease: "bounce" });
+gsap.from(".header", { y: -900, duration: 1, ease: "power2.in" });
+gsap.from(".playersContainer", { x: -2000, duration: 1.8, ease: "power2.in" });
+gsap.from("#pointContainer", { x: +2000, duration: 1.9, ease: "power2.in" });
+gsap.from("#gameContainer", { y: -2000, duration: 1.3, delay: 0.3,ease: "power2.in" });
 
-gsap.from("#rockBtn", { y: -1000, duration: 2.1, delay: 0.8, ease: "bounce" });
-gsap.from("#paperBtn", { y: -1000, duration: 2.1, delay: 0.9, ease: "bounce" });
-gsap.from("#scissorBtn", { y: -1000, duration: 2.1, delay: 1, ease: "bounce" });
+gsap.from("#rockBtn", { y: -700, duration: 2.1, delay: 1.3, ease: "bounce" });
+gsap.from("#paperBtn", { y: -700, duration: 2.1, delay: 1.6, ease: "bounce" });
+gsap.from("#scissorBtn", { y: -700, duration: 2.1, delay: 1.9, ease: "bounce" });
 
 
-gsap.from("#playerOne", { y: -1000, duration: 2.2, delay: 1.1, ease: "bounce" });
+gsap.from("#playerOne", { y: -800, duration: 2.2, delay: 1.1, ease: "bounce" });
 gsap.from("#playerTwo", { y: -1000, duration: 2.2, delay: 1.2, ease: "bounce" });
-
-gsap.from(".playerOneH1", { x: -1000, duration: 2.3, delay: 1.2, ease: "bounce" });
-gsap.from(".playerTwoH1", { x: +1000, duration: 2.3, delay: 1.2, ease: "bounce" });
-
-
 
 
 // knappar för att välja ditt drag
@@ -88,10 +82,6 @@ function playGame(yourMove) {
 
         player2points++;
 
-        //playerTwo.style.backgroundColor = "lightgreen";
-        //playerTwo.style.fontSize = "7rem";
-
-
         renderGame("✌️", "👊", player1points, player2points);
 
 
@@ -102,9 +92,6 @@ function playGame(yourMove) {
 
         player2points;
 
-        //playerOne.style.backgroundColor = "lightgreen";
-        //playerOne.style.fontSize = "7rem";
-
         renderGame("🖐", "👊", player1points, player2points);
 
     }
@@ -113,9 +100,6 @@ function playGame(yourMove) {
         player1points++;
 
         player2points;
-
-        //playerOne.style.backgroundColor = "lightgreen";
-        //playerOne.style.fontSize = "7rem";
 
         renderGame("👊", "✌️", player1points, player2points);
 
@@ -129,10 +113,6 @@ function playGame(yourMove) {
 
         player2points++;
 
-        //playerTwo.style.backgroundColor = "lightgreen";
-        //playerTwo.style.fontSize = "7rem";
-
-
         renderGame("🖐", "✌️", player1points, player2points);
 
 
@@ -144,21 +124,12 @@ function playGame(yourMove) {
 
         player2points++;
 
-        //playerTwo.style.backgroundColor = "lightgreen";
-        //playerTwo.style.fontSize = "7rem";
-
-
         renderGame("👊", "🖐", player1points, player2points);
-
-
 
     }
 
     if (playerOnesHand === 1 && playerTwosHand === 2) {
         player1points++;
-
-        //playerOne.style.backgroundColor = "lightgreen";
-        //playerOne.style.fontSize = "7rem";
 
         player2points;
         renderGame("✌️", "🖐", player1points, player2points);
@@ -166,8 +137,6 @@ function playGame(yourMove) {
     }
 
 };
-
-
 
 
 //rendera spel på sidan och ge poäng
