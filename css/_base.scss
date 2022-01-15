@@ -1,28 +1,11 @@
-// body {
-//     display: flex;
-//     justify-content: center;
-//     width: 100vw;
-//     margin: 0%;
-//     font-family: Arial, Helvetica, sans-serif;
-//     font-weight: 200;
-//     height: auto;
-    
-//     background-color: #4158D0;
-//     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-
-
-
-// }
 
 body{
     margin: 0%;
     padding: 0%;
-
     width: 100vw;
     height: 100vh;
-     
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-color: rgb(71, 71, 71);
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .gameBorder{
@@ -36,17 +19,19 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(220, 220, 220, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     height: 25vh;
 }
 
 header h1{
 
     height: auto;
-    color: blueviolet;
-    font-weight: 8  00;
-    margin: 0%;
+    color: lightsteelblue;
+    font-weight: lighter;
+    margin: 10px;
     padding: 0%;
+    letter-spacing: 2px;
+    word-spacing: 5px;
 
 }
 
@@ -62,7 +47,7 @@ header h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid whitesmoke;
+    
     background-color: whitesmoke;
     border-radius: 50%;
     text-align: center;
@@ -71,9 +56,6 @@ header h1{
     font-size: 3.8rem;
 }
 
-#rockBtn:hover {
-    border: 2px solid blueviolet;
-}
 
 #scissorBtn{
 
@@ -81,7 +63,7 @@ header h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid whitesmoke;
+    
     background-color: whitesmoke;
     border-radius: 50%;
     text-align: center;
@@ -91,9 +73,6 @@ header h1{
     
 }
 
-#scissorBtn:hover {
-    border: 2px solid blueviolet;
-}
 
 #paperBtn{
 
@@ -101,7 +80,7 @@ header h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid whitesmoke;
+    
     background-color: whitesmoke;
     border-radius: 50%;
     text-align: center;
@@ -111,20 +90,19 @@ header h1{
 
 }
 
-#paperBtn:hover {
-    border: 2px solid blueviolet;
-}
-
 
 .playersContainer{
-    background-color: rgba(137, 43, 226, 0.6);
+    background-color: rgba(176, 196, 222, 0.7);
     height: 10vh;
     gap: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-self: center;
-    color: whitesmoke;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 5px;
 
 }
 
@@ -135,11 +113,12 @@ header h1{
     align-items: center;
     height: 20vh;
     font-size: 5rem;
-    background-color: rgba(220, 220, 220, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
 }
 
 #gameContainer {
-    background-color:rgba(100, 148, 237, 0.6);
+    background-color:rgba(176, 196, 222, 0.7);
     justify-content: center;
     align-items: center;
     display: flex;
@@ -156,7 +135,6 @@ header h1{
     width: 130px;
     height: 130px;
     background-color: whitesmoke;
-    
     border-radius: 50%;
     text-align: center;
     font-size: 4rem;
@@ -170,7 +148,6 @@ header h1{
     width: 130px;
     height: 130px;
     background-color: whitesmoke;
-    
     border-radius: 50%;
     text-align: center;
     font-size: 4rem;
@@ -179,16 +156,22 @@ header h1{
 
 #playerTwoPoint {
     
-    background-color: rgba(245, 245, 245, 0.911);
+    background-color: whitesmoke;
+    border: 1px solid black;
+    
     border-radius: 10%;
     padding: 10px;
     opacity: 0;
+    color: black;
 }
 
 #playerOnePoint {
-    
-    background-color: rgba(245, 245, 245, 0.911);
+
+    background-color: whitesmoke;
+    border: 1px solid black;
+   
     border-radius: 10%;
     padding: 10px;
     opacity: 0;
+    color: black;
 }
