@@ -20,7 +20,7 @@ header{
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.6);
-    height: 25vh;
+    height: 30vh;
 }
 
 header h1{
@@ -114,6 +114,7 @@ header h1{
     font-size: 5rem;
     background-color: rgba(0, 0, 0, 0.5);
     color: whitesmoke;
+    padding: 5px;
 }
 
 #gameContainer {
@@ -121,8 +122,8 @@ header h1{
     justify-content: center;
     align-items: center;
     display: flex;
-    gap: 100px;
-    height: 40vh;
+    gap: 15%;
+    height: 35vh;
     font-size: 5rem;
     
 }
